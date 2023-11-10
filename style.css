@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#main {
+  width: 100%;
+}
+
+#nav {
+  display: flex;
+  font-weight: 700;
+  padding: 3vw 10vw;
+  position: relative;
+  justify-content: space-between;
+}
+
+#nav a {
+  color: black;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#nleft {
+  gap: 30px;
+  display: flex;
+}
+
+#nav #centeratag {
+  top: 50%;
+  left: 50%;
+  font-size: 14px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
