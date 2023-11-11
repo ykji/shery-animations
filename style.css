@@ -15,6 +15,8 @@ body {
   width: 100%;
 }
 
+/* navbar */
+
 #nav {
   display: flex;
   font-weight: 700;
@@ -29,15 +31,135 @@ body {
   text-decoration: none;
 }
 
-#nleft {
+#n-left {
   gap: 30px;
   display: flex;
 }
 
-#nav #centeratag {
+#nav #center-a-tag {
   top: 50%;
   left: 50%;
   font-size: 14px;
   position: absolute;
   transform: translate(-50%, -50%);
+}
+
+/* hero */
+
+#hero {
+  display: flex;
+  margin-top: 15vw;
+  padding: 3vw 10vw;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#sustain {
+  width: 10vw;
+}
+
+#sustain p {
+  opacity: 0.5;
+  margin: 10px 0;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+#sus-img-wrapper {
+  width: 100%;
+  height: 15vw;
+  overflow: hidden;
+}
+
+#sus-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#ephemeral {
+  width: 30vw;
+  min-height: 42vw;
+  position: relative;
+}
+
+#ephemeral #headings {
+  top: -16%;
+  left: -19%;
+  position: absolute;
+}
+
+#ephemeral h1 {
+  font-size: 6vw;
+  font-weight: 400;
+  line-height: 0.8;
+  letter-spacing: -0.4vw;
+}
+
+#ephemeral img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#ephemeral p {
+  width: 40%;
+  font-size: 1.3vw;
+  line-height: 1.3;
+  margin-top: 30px;
+  letter-spacing: -0.07vw;
+}
+
+#visit {
+  gap: 10px;
+  display: flex;
+  height: min-content;
+  align-items: center;
+  justify-content: center;
+}
+
+#circlev {
+  width: 3vw;
+  height: 3vw;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #5e5e5e;
+}
+
+#circlev i {
+  color: #5e5e5e;
+}
+
+#visit h3 {
+  color: #5e5e5e;
+  font-weight: 400;
+}
+
+/* motive */
+
+#motive {
+  display: flex;
+  margin-top: 7vw;
+  padding: 3vw 10vw;
+  justify-content: space-between;
+}
+
+#motive p {
+  width: 80%;
+  font-size: 2vw;
+  text-align: right;
+}
+
+#motive span {
+  width: 120px;
+  height: 50px;
+  margin: 0 13px;
+  border-radius: 100px;
+  display: inline-block;
+  margin-bottom: -12.5px;
+  background-color: red;
 }
