@@ -319,6 +319,7 @@ body {
 }
 
 #ftext button {
+  cursor: pointer;
   font-size: 0.6vw;
   color: #6f6f6f;
   font-weight: 700;

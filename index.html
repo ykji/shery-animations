@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shery Animations</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&display=swap"
@@ -13,38 +15,44 @@
   </head>
   <body>
     <div id="main">
-      <div id="nav">
-        <div id="n-left"><a href="#">Home</a><a href="#">Pricing</a><a href="#">Products</a></div>
-        <a href="#" id="center-a-tag">Yash</a>
-        <div id="n-right">
-          <a href="#">Our Journey</a>
-        </div>
-      </div>
-
-      <div id="hero">
-        <div id="sustain">
-          <h5>01.</h5>
-          <h2>Sustainability.</h2>
-          <p id="sus-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita illum, harum fugiat sunt saepe nesciunt.</p>
-          <div id="sus-img-wrapper"><img src="assets/pinkgreenplant.jpg" alt="pink-green-plant" /></div>
-        </div>
-
-        <div id="ephemeral">
-          <div id="headings">
-            <h1>Ephemeral</h1>
-            <h1>Equilibrium.</h1>
+      <div id="home">
+        <div id="nav">
+          <div id="n-left">
+            <a class="nlink" href="#">Home</a>
+            <a class="nlink" href="#">Pricing</a>
+            <a class="nlink" href="#">Products</a>
           </div>
-          <div id="imgntext">
-            <img src="assets/pinkplant.jpg" alt="pink-plant" />
-            <p>Committed to Sustainibility and Eco-friendly choice for a better tomorrow.</p>
+          <a class="nlink" href="#" id="center-a-tag">Yash</a>
+          <div id="n-right">
+            <a class="nlink" href="#">Our Journey</a>
           </div>
         </div>
 
-        <div id="visit">
-          <div id="circlev">
-            <i class="ri-arrow-down-line"></i>
+        <div id="hero">
+          <div class="hero-animation" id="sustain">
+            <h5>01.</h5>
+            <h2>Sustainability.</h2>
+            <p id="sus-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita illum, harum fugiat sunt saepe nesciunt.</p>
+            <div id="sus-img-wrapper"><img src="assets/pinkgreenplant.jpg" alt="pink-green-plant" /></div>
           </div>
-          <h3>visit our gallery</h3>
+
+          <div class="hero-animation" id="ephemeral">
+            <div id="headings">
+              <h1>Ephemeral</h1>
+              <h1>Equilibrium.</h1>
+            </div>
+            <div id="imgntext">
+              <img src="assets/pinkplant.jpg" alt="pink-plant" />
+              <p>Committed to Sustainibility and Eco-friendly choice for a better tomorrow.</p>
+            </div>
+          </div>
+
+          <div class="hero-animation" id="visit">
+            <div id="circlev">
+              <i class="ri-arrow-down-line"></i>
+            </div>
+            <h3>visit our gallery</h3>
+          </div>
         </div>
       </div>
 
@@ -93,5 +101,14 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+
+    <script src="script.js"></script>
   </body>
 </html>
